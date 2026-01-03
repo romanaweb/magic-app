@@ -15,7 +15,7 @@ st.write("Masukkan ide singkat, dan lihatlah ia tumbuh menjadi sesuatu yang mena
 # --- Mengambil Kunci Rahasia ---
 # Kita akan mengatur kunci ini di Langkah 4, jangan ditulis langsung di sini!
 try:
-    api_key = st.secrets["AIzaSyDMGTzqSSyzo-SVBfcQy22GX0ShoC_TTM4"]
+    api_key = st.secrets["GOOGLE_API_KEY"]
     genai.configure(api_key=api_key)
 except FileNotFoundError:
     st.error("Kunci API belum diatur. Silakan atur di Streamlit Secrets.")
